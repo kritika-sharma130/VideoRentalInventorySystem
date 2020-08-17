@@ -8,4 +8,8 @@
 package definitions;
 
 public class Video {
+    //fields
+    private String videoName;
+    private int rating;
+    private boolean checkOut;
 }
