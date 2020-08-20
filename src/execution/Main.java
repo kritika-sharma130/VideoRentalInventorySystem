@@ -11,12 +11,13 @@ import definitions.Video;
 
 public class Main {
     public static void main(String[] args) {
-        Video video = new Video();
-        video.setVideoName("Sooryavansham");
-        video.setRating(4);
-        video.setCheckOut(true);
+        Video video = new Video("Bahubali:The Beginning");
         System.out.println("Video Name:" + video.getVideoName() + ", " + "Video Rating:" + video.getRating() + ", " +
                 "Is video available:" + video.isCheckOut() + ".");
+        Video video1 = new Video();
+        System.out.println("Video Name:" + video1.getVideoName() + ", " + "Video Rating:" + video1.getRating() + ", " +
+                "Is video available:" + video1.isCheckOut() + ".");
+
 
     }
 }

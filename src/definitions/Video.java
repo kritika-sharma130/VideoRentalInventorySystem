@@ -13,6 +13,24 @@ public class Video {
     private int rating;
     private boolean checkOut;
 
+    public Video() {
+        this.videoName = "Sooryavansham";
+        this.rating = 4;
+        this.checkOut = false;
+    }
+
+    public Video(String videoName, int rating, boolean checkOut) {
+        this.videoName = videoName;
+        this.rating = rating;
+        this.checkOut = checkOut;
+    }
+
+    public Video(String videoName) {
+        this.videoName = videoName;
+        this.rating = 3;
+        this.checkOut = true;
+    }
+
     public String getVideoName() {
         return videoName;
     }
