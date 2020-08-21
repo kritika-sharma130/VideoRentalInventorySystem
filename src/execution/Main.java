@@ -17,6 +17,7 @@ public class Main {
         Video video1 = new Video();
         System.out.println("Video Name:" + video1.getVideoName() + ", " + "Video Rating:" + video1.getRating() + ", " +
                 "Is video available:" + video1.isCheckOut() + ".");
+        System.out.println(video);
 
 
     }
