@@ -18,6 +18,13 @@ public class Main {
         System.out.println("Video Name:" + video1.getVideoName() + ", " + "Video Rating:" + video1.getRating() + ", " +
                 "Is video available:" + video1.isCheckOut() + ".");
         System.out.println(video);
+        if (video.getClass().getName().equals(video1.getClass().getName())) {
+            if (video.getVideoName().equals(video1.getVideoName()) &&
+                    (video.getRating() == video1.getRating()) &
+                            (video.isCheckOut() == video1.isCheckOut())) {
+                System.out.println("The objects are equal");
+            }
+        }
 
 
     }

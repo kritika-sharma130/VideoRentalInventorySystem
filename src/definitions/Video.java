@@ -7,6 +7,8 @@
 
 package definitions;
 
+import java.util.Objects;
+
 public class Video {
     //fields
     private String videoName;
@@ -57,5 +59,20 @@ public class Video {
 
     public String toString() {
         return "Video Name:" + getVideoName() + "," + "Video Rating:" + getRating() + "," + "Is Video Available:" + isCheckOut() + ".";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Video video = (Video) o;
+        return getRating() == video.getRating() &&
+                isCheckOut() == video.isCheckOut() &&
+                Objects.equals(getVideoName(), video.getVideoName());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getVideoName(), getRating(), isCheckOut());
     }
 }
