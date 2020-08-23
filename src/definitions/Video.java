@@ -33,27 +33,48 @@ public class Video {
         this.checkOut = true;
     }
 
+    /**
+     * This method will allow the customer to rent a video.
+     */
+    public void doCheckout() {
+        System.out.println("Thank you for renting \"" + getVideoName() + "\".");
+    }
+
+    /**
+     * This method will allow the customer to return a video.
+     */
+    public void doReturn() {
+        System.out.println("Thank you for returning \"" + getVideoName() + "\".");
+    }
+
+
     public String getVideoName() {
+
         return videoName;
     }
 
     public void setVideoName(String videoName) {
+
         this.videoName = videoName;
     }
 
     public int getRating() {
+
         return rating;
     }
 
     public void setRating(int rating) {
+
         this.rating = rating;
     }
 
     public boolean isCheckOut() {
+
         return checkOut;
     }
 
     public void setCheckOut(boolean checkOut) {
+
         this.checkOut = checkOut;
     }
 
