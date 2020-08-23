@@ -44,7 +44,7 @@ public class VideoLauncher {
                     myVideoStore.addVideo(videoName);
                     break;
                 case CHECK_OUT_VIDEO:
-                    System.out.println("Enter the name of the video you want to return: ");
+                    System.out.println("Enter the name of the video you want to check out: ");
                     scanner.nextLine();
                     videoName = scanner.nextLine();
                     myVideoStore.doCheckout(videoName);
